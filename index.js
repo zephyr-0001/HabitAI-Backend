@@ -12,10 +12,10 @@ app.use("/task", require("./routes/task.routes.js"));
 
 app.get("/", (req, res) => {
   res.json({
-    message: "hello bros",
+    message: "hello from the server",
   });
 });
 
 app.listen(8082, () => {
-  console.log("service running bitch");
+  console.log("service running");
 });
