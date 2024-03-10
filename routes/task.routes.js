@@ -73,6 +73,7 @@ router.post("/", isAuthenticated, async (req, res) => {
 
     const task = await newTask.save();
     res.status(201).json({
+      message: "Task created!",
       data: task,
     });
   } catch (err) {
